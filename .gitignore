@@ -1,0 +1,24 @@
+# Target - Compiled files and JARs
+target/
+
+# NetBeans specific
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# IntelliJ 
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
