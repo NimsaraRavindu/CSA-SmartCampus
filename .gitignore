@@ -1,8 +1,9 @@
 # Target - Compiled files and JARs
 target/
 
-# NetBeans specific
-nbproject/private/
+nbproject/
+nb-configuration.xml
+nbactions.xml
 nbbuild/
 dist/
 nbdist/
