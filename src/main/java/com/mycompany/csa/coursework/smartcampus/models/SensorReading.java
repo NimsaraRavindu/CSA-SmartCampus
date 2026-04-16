@@ -1,4 +1,4 @@
-package com.mycompany.csa.coursework.smartcampus;
+package com.mycompany.csa.coursework.smartcampus.models;
 
 import java.util.UUID;
 

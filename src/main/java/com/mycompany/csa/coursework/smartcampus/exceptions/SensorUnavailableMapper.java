@@ -2,13 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.csa.coursework.smartcampus;
+package com.mycompany.csa.coursework.smartcampus.exceptions;
 
 /**
  *
  * @author nimsa
  */
 
+import com.mycompany.csa.coursework.smartcampus.exceptions.SensorUnavailableException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;

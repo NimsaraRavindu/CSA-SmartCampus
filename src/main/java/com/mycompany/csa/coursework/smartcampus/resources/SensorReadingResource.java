@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.csa.coursework.smartcampus;
+package com.mycompany.csa.coursework.smartcampus.resources;
 
 /**
  *
@@ -10,6 +10,9 @@ package com.mycompany.csa.coursework.smartcampus;
  */
 
 
+import com.mycompany.csa.coursework.smartcampus.models.Sensor;
+import com.mycompany.csa.coursework.smartcampus.models.SensorReading;
+import com.mycompany.csa.coursework.smartcampus.exceptions.SensorUnavailableException;
 import com.mycompany.csa.coursework.smartcampus.config.DataRepository;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;

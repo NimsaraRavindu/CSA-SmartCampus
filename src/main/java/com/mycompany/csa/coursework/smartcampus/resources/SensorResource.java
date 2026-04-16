@@ -1,5 +1,8 @@
-package com.mycompany.csa.coursework.smartcampus;
+package com.mycompany.csa.coursework.smartcampus.resources;
 
+import com.mycompany.csa.coursework.smartcampus.exceptions.LinkedResourceNotFoundException;
+import com.mycompany.csa.coursework.smartcampus.models.Room;
+import com.mycompany.csa.coursework.smartcampus.models.Sensor;
 import com.mycompany.csa.coursework.smartcampus.config.DataRepository;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;

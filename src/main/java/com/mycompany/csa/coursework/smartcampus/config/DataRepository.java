@@ -4,9 +4,9 @@
  */
 package com.mycompany.csa.coursework.smartcampus.config;
 
-import com.mycompany.csa.coursework.smartcampus.Room;
-import com.mycompany.csa.coursework.smartcampus.Sensor;
-import com.mycompany.csa.coursework.smartcampus.SensorReading;
+import com.mycompany.csa.coursework.smartcampus.models.Room;
+import com.mycompany.csa.coursework.smartcampus.models.Sensor;
+import com.mycompany.csa.coursework.smartcampus.models.SensorReading;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
