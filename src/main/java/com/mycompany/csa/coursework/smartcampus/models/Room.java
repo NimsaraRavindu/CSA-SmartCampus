@@ -22,7 +22,8 @@ public class Room {
     public Room(String id, String name, int capacity) {
         this.id = id; this.name = name; this.capacity = capacity;
     }
-
+    
+    // Getters and Setters for all fields
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getName() { return name; }

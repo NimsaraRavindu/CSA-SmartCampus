@@ -4,11 +4,7 @@
  */
 package com.mycompany.csa.coursework.smartcampus.exceptions;
 
-/**
- *
- * @author nimsa
- */
-
+// Custom exception thrown during sensor registration if the specified room ID does not exist in the repository.
 public class LinkedResourceNotFoundException extends RuntimeException {
     
     public LinkedResourceNotFoundException(String message) {

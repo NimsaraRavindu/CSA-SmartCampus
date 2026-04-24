@@ -22,7 +22,7 @@ public class Sensor {
         this.id = id; this.type = type; this.status = status; this.roomId = roomId;
     }
 
-    // Getters and Setters for all fields...
+    // Getters and Setters for all fields
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getType() { return type; }

@@ -4,10 +4,6 @@
  */
 package com.mycompany.csa.coursework.smartcampus.exceptions;
 
-/**
- *
- * @author nimsa
- */
 
 import com.mycompany.csa.coursework.smartcampus.exceptions.SensorUnavailableException;
 import javax.ws.rs.core.MediaType;

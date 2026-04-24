@@ -22,6 +22,6 @@ public class DataRepository {
     // Stores Sensor ID -> Sensor object 
     public static Map<String, Sensor> sensors = new ConcurrentHashMap<>();
     
-    // Stores Sensor ID -> List of historical readings [cite: 139]
+    // Stores Sensor ID -> List of historical readings 
     public static Map<String, List<SensorReading>> history = new ConcurrentHashMap<>();
 }

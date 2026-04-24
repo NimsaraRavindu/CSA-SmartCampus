@@ -10,7 +10,7 @@ package com.mycompany.csa.coursework.smartcampus.exceptions;
  */
 
 
-import com.mycompany.csa.coursework.smartcampus.exceptions.RoomNotEmptyException;
+
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
@@ -21,7 +21,9 @@ import java.util.Map;
 public class RoomNotEmptyMapper implements ExceptionMapper<RoomNotEmptyException> {
     @Override
     public Response toResponse(RoomNotEmptyException exception) {
-        return Response.status(Response.Status.CONFLICT) // HTTP 409 
+        // We return HTTP 409 Conflict because the request cannot be completed 
+        // due to the current state of the resource (i.e. existing sensor dependencies).
+        return Response.status(Response.Status.CONFLICT) 
                 .entity(Map.of("error", exception.getMessage()))
                 .type(MediaType.APPLICATION_JSON)
                 .build();

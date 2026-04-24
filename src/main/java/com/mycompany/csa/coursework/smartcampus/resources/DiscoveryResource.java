@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 @Path("/")
 public class DiscoveryResource {
     private static final Logger LOG = Logger.getLogger(DiscoveryResource.class.getName());
-
+    //All availble endpoints and metadata
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getDiscoveryInfo() {

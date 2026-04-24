@@ -28,7 +28,7 @@ public class SensorResource {
         return Response.ok(sensorList).build();
     }
 
-    // ADD THIS METHOD: Needed to verify Task 4.2 in your Video Demo
+    //  Needed to verify Task 4.2 
     @GET
     @Path("/{sensorId}")
     public Response getSensorById(@PathParam("sensorId") String sensorId) {
@@ -63,7 +63,7 @@ public class SensorResource {
     // Task 4.1: Sub-Resource Locator 
     @Path("/{sensorId}/read")
     public SensorReadingResource getReadings(@PathParam("sensorId") String sensorId) {
-        // Best practice: verify the sensor exists before delegating
+        // verify the sensor exists before delegating
         if (!DataRepository.sensors.containsKey(sensorId)) {
              throw new WebApplicationException(
                  Response.status(404).entity(Map.of("error", "Sensor not found")).build()

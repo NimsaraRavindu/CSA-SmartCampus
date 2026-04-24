@@ -12,8 +12,7 @@ package com.mycompany.csa.coursework.smartcampus;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
-import java.util.HashSet;
-import java.util.Set;
+
 
 /**
  * Task 1.1: Project & Application Configuration

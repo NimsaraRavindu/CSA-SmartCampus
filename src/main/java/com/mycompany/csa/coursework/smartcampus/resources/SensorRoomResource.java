@@ -25,7 +25,7 @@ public class SensorRoomResource {
         return Response.ok(new ArrayList<>(DataRepository.rooms.values())).build();
     }
 
-    // 2. GET ROOM BY ID (Task 2.1 - Critical for Video Demo)
+    // 2. GET ROOM BY ID 
     @GET
     @Path("/{roomId}")
     public Response getRoomById(@PathParam("roomId") String roomId) {
@@ -38,7 +38,7 @@ public class SensorRoomResource {
         return Response.ok(room).build();
     }
 
-    // 3. CREATE ROOM (Updated for Task 2.1 'Excellent' Location Header)
+    // 3. CREATE ROOM 
     @POST
     public Response createRoom(Room room, @Context UriInfo uriInfo) {
         DataRepository.rooms.put(room.getId(), room);
@@ -55,14 +55,14 @@ public class SensorRoomResource {
                        .build();
     }
 
-    // 4. DELETE ROOM (Task 2.2 - Business Logic Constraint)
+    // 4. DELETE ROOM 
     @DELETE
     @Path("/{roomId}")
     public Response deleteRoom(@PathParam("roomId") String roomId) {
         Room room = DataRepository.rooms.get(roomId);
         
         if (room == null) {
-            return Response.noContent().build(); // Idempotent: 204 if already gone
+            return Response.noContent().build(); // Idempotent: 204 
         }
 
         // Check if room has active sensors (The 409 Conflict logic)

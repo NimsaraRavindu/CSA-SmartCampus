@@ -25,7 +25,7 @@ public class GlobalExceptionMapper implements ExceptionMapper<Throwable> {
         LOG.log(Level.SEVERE, "Internal server error caught: ", exception);
 
         // 3. Task 5.4: The "Safety Net" - Return a generic 500 status
-        // This ensures NO stack trace is visible to the user/attacker.
+        // This ensures no stack trace is visible to the user/attacker.
         return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                 .entity(Map.of(
                     "status", 500,

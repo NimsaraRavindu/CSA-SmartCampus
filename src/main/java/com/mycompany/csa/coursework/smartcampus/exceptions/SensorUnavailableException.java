@@ -3,11 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.csa.coursework.smartcampus.exceptions;
-
-/**
- *
- * @author nimsa
- */
 /**
  * Task 5.3: Custom Exception for State-Based Constraints.
  * Thrown when an operation is attempted on a sensor in MAINTENANCE status.

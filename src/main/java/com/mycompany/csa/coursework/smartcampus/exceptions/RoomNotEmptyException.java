@@ -4,12 +4,7 @@
  */
 package com.mycompany.csa.coursework.smartcampus.exceptions;
 
-/**
- *
- * @author nimsa
- */
-
-
+// Custom business logic exception to prevent deleting rooms that still contain active sensors.
 public class RoomNotEmptyException extends RuntimeException {
     public RoomNotEmptyException(String message) {
         super(message);

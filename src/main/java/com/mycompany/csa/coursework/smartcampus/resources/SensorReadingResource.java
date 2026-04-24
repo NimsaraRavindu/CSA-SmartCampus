@@ -19,7 +19,6 @@ import javax.ws.rs.core.*;
 import java.util.*;
 import java.util.logging.Logger;
 
-// Ensure these are here at the class level
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class SensorReadingResource {

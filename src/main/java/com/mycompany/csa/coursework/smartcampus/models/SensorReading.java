@@ -7,18 +7,18 @@ public class SensorReading {
     private long timestamp;
     private double value;
 
-    // JAX-RS uses this one! Ensure it sets the time.
+    // sets the time.
     public SensorReading() { 
         this.id = UUID.randomUUID().toString(); 
-        this.timestamp = System.currentTimeMillis(); // Fix: set time here
+        this.timestamp = System.currentTimeMillis(); 
     } 
 
     public SensorReading(double value) {
         this(); // Calls the constructor above
         this.value = value;
     }
-
-    // Getters and Setters are fine as you wrote them
+    
+    // Getters and Setters for all fields
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public long getTimestamp() { return timestamp; }
